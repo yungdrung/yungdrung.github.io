@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Объект А Шине</title>
+  <link rel="stylesheet" href="styles_for_Hine.css">
+    <!-- Скрипт, вызывающий модальное окно после загрузки страницы -->
+<script>
+  $(document).ready(function() {
+    $("#myModalBox").modal('showModal');
+  });
+</script>
+    
+<script>
+function showTimer(hours, min, sec) {
+  var hours = document.getElementById("slider0").value;
+  document.getElementById("houres").innerHTML = hours;
+
+  var min = document.getElementById("slider1").value;
+  document.getElementById("minutes").innerHTML = min;
+
+  var sec = document.getElementById("slider2").value;
+  document.getElementById("seconds").innerHTML = sec;
+}
+
+var hour = {
+  toString: function() {return document.getElementById("slider0").value;
+     }
+};
+
+var min = {
+  toString: function() {return document.getElementById("slider1").value;
+   }
+};
+
+var sec = {
+  toString: function() {return document.getElementById("slider2").value;
+   }
+};
+
+function refresh()
+{
+  sec--;
+  if(sec==-01){sec=59; min=min-1;}
+  else{min=min;}
+  if(min==-01){min=59; hour=hour-1;}
+  else{hour=hour;}
+  if(sec<=9){sec="0" + sec;}
+  time=(hour<=9 ? "0"+hour : hour) + ":" + (min<=9 ? "0"+min : min) + ":" + sec;
+  if(document.getElementById){timer.innerHTML=time;}
+  inter=setTimeout("refresh()", 1000);
+  // действие, если таймер 00:00:00
+  if(hour==0 && min==0 && sec==0){
+    sec="00";
+    clearInterval(inter);
+    /* выводим сообщение в элемент с id="tut", например <div id="tut"></div> */
+                
+    
+                /* либо модальное окно */
+                //alert('Таймер завершил свою работу!');
+
+                /* либо переход на какой-то адрес */
+    //window.location='http://www.net-f.ru/';
+    // Reload the current page, without using the cache
+    //window.location.reload(true);
+                var aud = document.getElementById('player');
+                aud.play();
+                /* либо любой другой Ваш код */
+                document.getElementById('akar').className = "animate";
+                //className = "animate";
+                //style.display = 'none'
+
+                tut.innerHTML="Запечатываем безобъектностью!";
+                setTimeout(window.location.reload.bind(window.location), 70000);
+              
+  }
+}
+//-->
+                
+
+</script>
+</head>
+<body onload="showTimer()">
+  
+    
+<!-- HTML-код модального окна -->
+<div id="myModalBox" class="modal-fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+         <h4 class="modal-title">Напоминание</h4>
+         <p class="modal-title">Проверяем свою мотивацию, а также клавиша F11 для некоторых браузеров переключает полноэкранный/оконный режим</p>
+      </div>
+      <!-- Основное содержимое модального окна -->
+      <div id="ModalKom" class="modal-body">
+        <p>Однонаправленное сосредоточение (удержание ума) на объекте, обладающем характеристиками, умиротворяет ум,<br>
+        тем самым помогает не отвлекаться. Это полезно в мирских делах, и просто необходимо в духовной практике!<br>
+        <b>Три принципа духовной практики:</b>
+       1) Намерение помочь живым существам избавиться от страданий;<br>
+        2) Выполнение практики без отвлечения и смешивания с чем-то еще (в точном соответствии с наставлениями);<br>
+        3) Безобъектное посвящение накопленной в результате практики добродетели.<br>
+          <b>Четыре ключевых пункта практики:</b> тела - поза, органов чувств - способ смотрения, обязательств - поддержание, ума - установление состояния ума.<br>
+            1} Положение тела неподвижное, сидим прямо на удобном сидении в открытом обширном пространстве (помещении):<br>
+        1. Ноги в лотосе или скрещены (правая нога под левой) - очищается тупость;<br>
+        2. Руки в мудре равностного сосредоточения - очищается привязанность;<br>
+        3. Позвоночник выпрямлен - очищается гнев;<br>
+        4. Плечи расправлены, шея чуть наклонена вперед, язык прикасается к нёбу - очищается гордыня;<br>
+        5. Полуприкрытые глаза смотрят через кончик носа в пространство, губы и зубы не смыкаются (на расстояние ячменного зерна) - очищается зависть.<br>
+          Дыхание свободное. Благодаря этой неподвижной позе все составляющие тела уравновешиваются, за счет этого пять ядов ума умиротворяются на своих местах.<br>
+            2} Способ смотрения на изображение белого А размером с фалангу большого пальца (с 5 разноцветными кругами вокруг).<br>
+          Установить взгляд так как удобно (не слишком низко, чтобы не засыпать), глаза открыты естественным образом.<br>
+          Смотреть в одно место - на объект, с силой, ясно и внимательно.<br>
+          Благодаря неподвижности глаз - ум также неподвижен - сосредоточение ясное.<br>
+          3} Нельзя двигать глазами, ресницами, моргать, двигать телом, сглатывать слюну. Слюну, слезы, сопли выпускать естественно.<br>
+              Нельзя менять объект сосредоточения пока не возникнет хорошей концентрации внимания на первом объекте!<br>
+          4} Ум не должен думать о прошлом, о будущем, о происходящем сейчас. Если возникают какие-то мысли, просто возвращаться к сосредоточению на А.<br>
+              Сознание должно быть направлено туда же, куда и направлен взгляд. Умом постоянно (безпрерывно) пребывать в одном (не меняется) состоянии,<br> 
+              в отсутствие мыслей. При возникновении оптических эффектов оставлять ум вместе с тем, что видим.<br>
+              Во время направления на объект опоры ум должен обладать двумя особенностями:<br>
+              - аспект ясности - восприятие ясное, без затуманивания и сонливости, т.е. без препятствия вялости;<br>
+              - ум пребывает на объекте однонаправленно (взгляд и ум направлены только на один объект), т.е. без препятствия возбужденности.<br>
+            <em>Помощники и спутники: памятование - постоянно помним чем заняты; бдительность - время от времени проверяем, есть ли памятование;<br>
+            направляющая воля - то что направляет наше сознание в нужную сторону; равностность - не впадение в крайности вялости и возбуждения.</em><br>
+        	<b>Признаки реализации практики:</b> расслабление и непроизвольное подрагивание тела; комфортное ощущение тела и ума; способность удерживать концентрацию на чем-то одном, столько времени, сколько захотим. В перерывах между занятиями следует выпрямлять ноги и руки, расслабленно лежать на спине, делать специальные упражнения.</p>
+    </div>
+            <!-- Футер модального окна -->
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal" onClick="getElementById('ModalKom').style.opacity='1.0';">Комментарий</button>
+                <button autofocus type="button" class="btn" data-dismiss="modal" onClick="getElementById('myModalBox').style.display='none';">ДА, ок!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="wrapper">
+    <div class="content">
+    <form oninput="getElementById('akar').setAttribute('width',value=slider.value);" style="min-height: 200px;">
+     <input id="slider" type="range" min="210" max="500" value="340"></input>
+        <br>
+      <img id="akar" class="slider-image" src="./docs/Hine_A.svg" width="340" alt="svg">
+          </form>
+    
+          <form oninput="showTimer();">
+              <input id="slider0" type="range" min="0" max="24" value="0"></input>
+                <br>
+              <input id="slider1" type="range" min="1" max="59" value="2"></input>
+                <br>
+              <input id="slider2" type="range" min="1" max="59" value="35"></input>
+          </form>
+                  <div id="tibox" class="timer-box">
+                    <div class="timer">
+                      <ul>
+                        <li id="houres"></li>
+                        <li id="minutes"></li>
+                        <li id="seconds"></li>
+                      </ul>
+                    <ul class="time-name">
+                        <li>час.</li>
+                        <li>мин.</li>
+                        <li>сек.</li>
+                      </ul>
+                    </div>
+                      
+                  </div>
+         
+     </div>
+    <div  class="footer" id="fut">
+
+        
+                 
+                  <span id="timer"></span>
+        <button type="button" id="elem" class="Starting">Start!</button>
+        <div id="tut"></div>
+        <!-- <button type="button" class="Starting" onclick="document.getElementById('player').play()";>Dzin!</button> !-->
+    </div>
+  </div>
+
+  <script>
+elem.addEventListener("click", soundClick);
+elem.addEventListener("click", refresh);
+elem.addEventListener("click", zeropa);
+//akar.addEventListener ( "transitionend", ReScript);
+
+  function soundClick() {
+  var aud = document.getElementById('player');
+  aud.play();
+}
+
+ function zeropa() {
+  document.getElementById('slider').className = "disnon";
+ document.getElementById('slider0').className = "disnon";
+ document.getElementById('slider1').className = "disnon";
+ document.getElementById('slider2').className = "disnon";
+ document.getElementById('elem').className = "disnon";
+ document.getElementById('tibox').className = "disnon";
+ document.getElementById('timer').className = "dison";
+}
+
+  </script>
+
+  <audio id="player" src="./docs/dzin.mp3" preload="auto" volume='0.1'></audio>
+</body>
+</html>

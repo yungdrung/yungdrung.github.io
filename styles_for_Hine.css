@@ -1,0 +1,83 @@
+@viewport { width: device-width; }
+
+  /*
+  Modal Overlay
+*/
+.modal-fade {
+  background:rgba(0,0,0,.8);
+  height: 100%;
+  left: 0;
+  display: flex;
+  overflow: auto;
+  padding: 0.5em;
+  position: fixed;
+  top: 0;
+  transition: opacity .2s;
+  width: 100%;
+  z-index: 2;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body {
+  padding-left: 1em;
+  padding-top: 0;
+  padding-right: 1em;
+  padding-bottom: 0;
+  opacity: 0;
+}
+
+.dison {
+  font-size: 12px;
+  opacity: 0;
+}
+
+.btn {
+  margin: 15px;
+}
+
+body {
+  color: white;
+  font-family: arial;
+  font-size: 14px;
+  background: #352B68;
+}
+
+.timer {
+display: inline-block;
+}
+
+.timer-name {
+display: inline-block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: auto;
+}
+.content {
+  flex: 1 0 auto;
+  margin: auto;
+  text-align: center;
+}
+.footer {
+     flex: 0 0 auto;
+      margin: auto; 
+}
+
+.animate {
+  opacity: 0.0;
+  transition-property: opacity;
+  transition-duration: 25s;
+}
+
+ul {
+  display: inline-block;
+}
+.disnon {
+  display: none;
+}
